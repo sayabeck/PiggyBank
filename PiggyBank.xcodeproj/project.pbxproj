@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		9AB3FE7827E5FFCD009DE5B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3FE7727E5FFCD009DE5B6 /* AppDelegate.swift */; };
 		9AB3FE7A27E5FFCD009DE5B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3FE7927E5FFCD009DE5B6 /* SceneDelegate.swift */; };
-		9AB3FE7C27E5FFCD009DE5B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3FE7B27E5FFCD009DE5B6 /* ViewController.swift */; };
 		9AB3FE7F27E5FFCD009DE5B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB3FE7D27E5FFCD009DE5B6 /* Main.storyboard */; };
 		9AB3FE8127E5FFCE009DE5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB3FE8027E5FFCE009DE5B6 /* Assets.xcassets */; };
 		9AB3FE8427E5FFCE009DE5B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB3FE8227E5FFCE009DE5B6 /* LaunchScreen.storyboard */; };
+		9AB3FE9427E600F1009DE5B6 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3FE9327E600F1009DE5B6 /* OnboardingViewController.swift */; };
+		9AB3FE9727E603EA009DE5B6 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3FE9627E603EA009DE5B6 /* OnboardingSlide.swift */; };
+		9AB3FE9A27E60655009DE5B6 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3FE9927E60655009DE5B6 /* OnboardingCollectionViewCell.swift */; };
+		9AB3FEA227E61166009DE5B6 /* SlideDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3FEA127E61166009DE5B6 /* SlideDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9AB3FE7427E5FFCD009DE5B6 /* PiggyBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiggyBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB3FE7727E5FFCD009DE5B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB3FE7927E5FFCD009DE5B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9AB3FE7B27E5FFCD009DE5B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9AB3FE7E27E5FFCD009DE5B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AB3FE8027E5FFCE009DE5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB3FE8327E5FFCE009DE5B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AB3FE8527E5FFCE009DE5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB3FE9327E600F1009DE5B6 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		9AB3FE9627E603EA009DE5B6 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		9AB3FE9927E60655009DE5B6 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		9AB3FEA127E61166009DE5B6 /* SlideDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		9AB3FE7627E5FFCD009DE5B6 /* PiggyBank */ = {
 			isa = PBXGroup;
 			children = (
-				9AB3FE7727E5FFCD009DE5B6 /* AppDelegate.swift */,
-				9AB3FE7927E5FFCD009DE5B6 /* SceneDelegate.swift */,
-				9AB3FE7B27E5FFCD009DE5B6 /* ViewController.swift */,
-				9AB3FE7D27E5FFCD009DE5B6 /* Main.storyboard */,
+				9AB3FE8D27E60090009DE5B6 /* Controllers */,
+				9AB3FE8C27E5FFFD009DE5B6 /* Models */,
+				9AB3FE9027E600B7009DE5B6 /* App */,
+				9AB3FE9227E600C4009DE5B6 /* Views */,
 				9AB3FE8027E5FFCE009DE5B6 /* Assets.xcassets */,
-				9AB3FE8227E5FFCE009DE5B6 /* LaunchScreen.storyboard */,
-				9AB3FE8527E5FFCE009DE5B6 /* Info.plist */,
 			);
 			path = PiggyBank;
+			sourceTree = "<group>";
+		};
+		9AB3FE8C27E5FFFD009DE5B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9AB3FE9627E603EA009DE5B6 /* OnboardingSlide.swift */,
+				9AB3FEA127E61166009DE5B6 /* SlideDataManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9AB3FE8D27E60090009DE5B6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9AB3FE8F27E6009F009DE5B6 /* Onboarding */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9AB3FE8F27E6009F009DE5B6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9AB3FE9327E600F1009DE5B6 /* OnboardingViewController.swift */,
+				9AB3FE9927E60655009DE5B6 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		9AB3FE9027E600B7009DE5B6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9AB3FE7727E5FFCD009DE5B6 /* AppDelegate.swift */,
+				9AB3FE7927E5FFCD009DE5B6 /* SceneDelegate.swift */,
+				9AB3FE8527E5FFCE009DE5B6 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9AB3FE9227E600C4009DE5B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AB3FE7D27E5FFCD009DE5B6 /* Main.storyboard */,
+				9AB3FE8227E5FFCE009DE5B6 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB3FE7C27E5FFCD009DE5B6 /* ViewController.swift in Sources */,
+				9AB3FE9727E603EA009DE5B6 /* OnboardingSlide.swift in Sources */,
 				9AB3FE7827E5FFCD009DE5B6 /* AppDelegate.swift in Sources */,
+				9AB3FE9A27E60655009DE5B6 /* OnboardingCollectionViewCell.swift in Sources */,
+				9AB3FE9427E600F1009DE5B6 /* OnboardingViewController.swift in Sources */,
 				9AB3FE7A27E5FFCD009DE5B6 /* SceneDelegate.swift in Sources */,
+				9AB3FEA227E61166009DE5B6 /* SlideDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MMKWZWX48;
-				INFOPLIST_FILE = PiggyBank/Info.plist;
+				INFOPLIST_FILE = PiggyBank/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sayabeck.PiggyBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MMKWZWX48;
-				INFOPLIST_FILE = PiggyBank/Info.plist;
+				INFOPLIST_FILE = PiggyBank/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sayabeck.PiggyBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
