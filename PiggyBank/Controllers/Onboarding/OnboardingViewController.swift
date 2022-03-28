@@ -16,6 +16,7 @@ class OnboardingViewController: UIViewController {
     var slides = OnboardingSlide.setupSlides()
     var currentPage = 0 {
         didSet {
+            pageControl.currentPage = currentPage
             if currentPage == slides.count - 1 {
                 nextButton.setTitle("Get started", for: .normal)
             } else {
@@ -31,7 +32,6 @@ class OnboardingViewController: UIViewController {
         collectionView.dataSource = self
         
         nextButton.layer.cornerRadius = 20
-
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
@@ -77,6 +77,5 @@ extension OnboardingViewController: UICollectionViewDelegateFlowLayout {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let width = scrollView.frame.width
         currentPage = Int(scrollView.contentOffset.x / width)
-        pageControl.currentPage = currentPage
     }
 }
